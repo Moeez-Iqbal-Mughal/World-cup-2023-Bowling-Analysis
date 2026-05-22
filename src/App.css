@@ -176,7 +176,8 @@
 }
 
 .tab-btn.active {
-  border-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--tab-color);
+  background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 16px 36px -12px var(--tab-glow);
 }
 
@@ -691,6 +692,12 @@
     padding: 4px 6px;
     gap: 6px;
     border-radius: 6px;
+  }
+
+  .tab-btn.active {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--tab-color);
+    box-shadow: 0 4px 12px var(--tab-glow);
   }
 
   .tab-emoji-container {
